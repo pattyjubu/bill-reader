@@ -68,12 +68,18 @@ def bill_reader(image_bill_path):
     bill_csv_filename = bill_csv_filename[0] + '_order.csv'
     bill_csv_path = os.path.join(parent, bill_csv_filename)
     write_csv(bill_csv_path, order_list, price_list)
-    print(parent)
     print(bill_csv_filename)
 
 
 if __name__ == '__main__':
     # path = r"C:\Patty\Learn\BillReader\test_images\test_bill_crop.jpg"
     # text = bill_reader(path)
-    text = bill_reader(sys.argv[1])
+    bill_path = input('Input Bill Image Path: ')
+    if bill_path.startswith('"'):
+        bill_path = bill_path[1:]
+    if bill_path.endswith('"'):
+        bill_path = bill_path[:-1]
+    print(bill_path)
+    text = bill_reader(bill_path)
+
 
