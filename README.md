@@ -15,8 +15,5 @@ This project is example code to read the bill by using OCR
 	pip install opencv-python
 	```
 ## How to run
-- Example
-	```
-	(venv) C:\Patty\Learn\BillReader>python source_code/bill_reader.py C:\Patty\Learn\BillReader\test_images\test_bill
-	_crop.jpg
-	```
+- I have install opencv-python in virtualenv. In my BAT file I have to activate my virtualenv.
+- Double click on RunBillReader.bat
