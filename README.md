@@ -14,7 +14,6 @@ This project is example code to read the bill by using OCR
 	```
 	pip install opencv-python
 	```
-	
 ## How to run
 - Example
 	```
